@@ -98,8 +98,16 @@
       font-size: clamp(1.8rem, 3vw, 2.8rem);
       font-weight: 500;
       line-height: 1.6;
-      letter-spacing: 0.16em;
+      letter-spacing: 0.08em;
+      margin-bottom: 10px;
+      white-space: nowrap;
+    }
+
+    .hero__subhead {
       margin-bottom: 18px;
+      font-size: 1rem;
+      letter-spacing: 0.14em;
+      color: var(--text);
     }
 
     .hero p,
@@ -276,6 +284,11 @@
         grid-template-columns: 1fr;
       }
 
+      .hero h1 {
+        font-size: clamp(1.12rem, 4.8vw, 1.45rem);
+        letter-spacing: 0.02em;
+      }
+
       .page {
         padding: 28px 18px 72px;
       }
@@ -296,7 +309,8 @@
     <section class="hero">
       <div>
         <span class="eyebrow">Quiet One Page Site</span>
-        <h1>静かな1ページサイト制作<br>お申し込みフォーム</h1>
+        <h1>静かな1ページサイト制作</h1>
+        <p class="hero__subhead">お申し込みフォーム</p>
         <p>個人で活動している方や、小さなお店のための1ページサイト制作を受け付けています。文章や写真がまだ揃っていなくても、やりとりしながら整えていけます。</p>
       </div>
       <aside class="hero__card">
