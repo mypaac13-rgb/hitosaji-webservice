@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>費用について | ひとさじ</title>
+  <meta name="description" content="ひとさじの1ページホームページ制作の費用ページです。相場より少し安い個人間の価格で、内容と目安をわかりやすくご案内します。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Zen+Old+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #f8f5ef;
+      --bg-dark: #3a3632;
+      --text: #2c2825;
+      --light: #6b6560;
+      --line: #c4beb6;
+      --accent: #8a7e72;
+      --white: #f7f5f2;
+      --font-mincho: 'Shippori Mincho', 'Zen Old Mincho', serif;
+      --font-garamond: 'EB Garamond', serif;
+      --content: 980px;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      font-family: var(--font-mincho);
+      color: var(--text);
+      background: var(--bg);
+      line-height: 2.2;
+      letter-spacing: 0.08em;
+    }
+
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      z-index: 9999;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .page {
+      max-width: var(--content);
+      margin: 0 auto;
+      padding: 42px 24px 88px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 64px;
+    }
+
+    .topbar__brand {
+      font-size: 0.86rem;
+      letter-spacing: 0.22em;
+    }
+
+    .topbar__back {
+      font-family: var(--font-garamond);
+      font-size: 0.82rem;
+      color: var(--accent);
+      letter-spacing: 0.12em;
+    }
+
+    .eyebrow {
+      display: block;
+      font-family: var(--font-garamond);
+      font-size: 0.74rem;
+      color: var(--accent);
+      letter-spacing: 0.24em;
+      margin-bottom: 18px;
+    }
+
+    .title {
+      font-size: 1.28rem;
+      font-weight: 500;
+      line-height: 1.9;
+      letter-spacing: 0.2em;
+      margin-bottom: 16px;
+    }
+
+    .lead,
+    .card__desc,
+    .card__item,
+    .summary p,
+    .note {
+      font-size: 0.82rem;
+      color: var(--light);
+      line-height: 2.2;
+    }
+
+    .lead {
+      max-width: 620px;
+      margin-bottom: 54px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 44px 54px;
+      margin-bottom: 56px;
+    }
+
+    .card {
+      position: relative;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+
+    .card__meta {
+      display: block;
+      font-family: var(--font-garamond);
+      font-size: 0.74rem;
+      color: var(--accent);
+      letter-spacing: 0.18em;
+      margin-bottom: 22px;
+    }
+
+    .card__badge {
+      position: absolute;
+      top: 18px;
+      right: 0;
+      border: 1px solid var(--line);
+      padding: 6px 14px;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+    }
+
+    .card__title {
+      font-size: 0.92rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      margin-bottom: 20px;
+      padding-right: 88px;
+      line-height: 1.8;
+    }
+
+    .card__price {
+      font-size: 1.72rem;
+      line-height: 1.4;
+      letter-spacing: 0.01em;
+      margin-bottom: 20px;
+      font-variant-numeric: tabular-nums;
+      font-feature-settings: "tnum" 1;
+    }
+
+    .card__list {
+      list-style: none;
+      margin: 18px 0 22px;
+    }
+
+    .card__item {
+      margin-bottom: 6px;
+    }
+
+    .card__term {
+      display: block;
+      margin-top: 10px;
+      font-size: 0.76rem;
+      color: var(--accent);
+      letter-spacing: 0.08em;
+    }
+
+    .summary {
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      margin-bottom: 34px;
+    }
+
+    .summary h2 {
+      font-size: 0.96rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      margin-bottom: 14px;
+    }
+
+    .note {
+      padding-left: 18px;
+      border-left: 2px solid var(--line);
+      max-width: 760px;
+      margin-bottom: 32px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 34px;
+      border: 1px solid var(--line);
+      font-size: 0.82rem;
+      letter-spacing: 0.14em;
+    }
+
+    .btn--dark {
+      background: var(--bg-dark);
+      color: var(--white);
+      border-color: var(--bg-dark);
+    }
+
+    @media (max-width: 860px) {
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 34px;
+      }
+
+      .page {
+        padding: 28px 18px 72px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="topbar">
+      <a class="topbar__brand" href="../index.html">ひとさじ</a>
+      <a class="topbar__back" href="../index.html">Top Page</a>
+    </div>
+
+    <span class="eyebrow">Price</span>
+    <h1 class="title">費用について</h1>
+    <p class="lead">制作会社や大きな外注サービスより少し手が届きやすく、でも安さだけではなく丁寧さも残したい。その感覚で価格を決めています。</p>
+
+    <section class="grid">
+      <article class="card">
+        <span class="card__meta">Light Plan</span>
+        <h2 class="card__title">静かな紹介ページ</h2>
+        <div class="card__price">25,000円（税込）</div>
+        <p class="card__desc">まずは活動やお店を見せるための1ページサイト。必要なものをきちんと揃えた基本の形です。</p>
+        <ul class="card__list">
+          <li class="card__item">1ページ制作</li>
+          <li class="card__item">スマホ対応</li>
+          <li class="card__item">修正2回</li>
+        </ul>
+        <span class="card__term">納期目安: 7日〜10日</span>
+      </article>
+
+      <article class="card">
+        <span class="card__meta">Standard Plan</span>
+        <span class="card__badge">おすすめ</span>
+        <h2 class="card__title">世界観まで整えるプラン</h2>
+        <div class="card__price">45,000円（税込）</div>
+        <p class="card__desc">写真や文章の整理まで含めて、見え方を一緒に整えるプラン。ブランドの空気感まで詰めたい方向けです。</p>
+        <ul class="card__list">
+          <li class="card__item">1ページ制作</li>
+          <li class="card__item">コピー整理</li>
+          <li class="card__item">修正3回</li>
+        </ul>
+        <span class="card__term">納期目安: 10日〜14日</span>
+      </article>
+
+      <article class="card">
+        <span class="card__meta">Direction Plan</span>
+        <h2 class="card__title">小さなブランド立ち上げ</h2>
+        <div class="card__price">応相談</div>
+        <p class="card__desc">サイトだけでなく、全体の見せ方や導線も含めて相談したい方向け。内容に応じて調整します。</p>
+        <ul class="card__list">
+          <li class="card__item">構成相談</li>
+          <li class="card__item">世界観の整理</li>
+          <li class="card__item">必要ページ追加相談</li>
+        </ul>
+        <span class="card__term">納期目安: 内容に応じて調整</span>
+      </article>
+    </section>
+
+    <section class="summary">
+      <h2>価格の考え方</h2>
+      <p>一般的な1ページ制作は、内容にもよりますが 50,000円〜100,000円ほどになることが多いです。ひとさじでは、個人間で直接やりとりするぶん、少し手が届きやすい価格にしています。</p>
+      <p style="margin-top: 1.3em;">安さだけを優先するのではなく、丁寧にやりとりしながら、必要なものをきちんと整える。そのちょうどよいところを目指しています。</p>
+    </section>
+
+    <p class="note">内容によっては価格が上下する場合があります。まずはざっくりした状態でも大丈夫なので、お気軽にお問い合わせください。</p>
+
+    <div class="actions">
+      <a class="btn btn--dark" href="../service/index.html">申し込みフォームへ</a>
+      <a class="btn" href="mailto:mypaac13@gmail.com">メールで相談する</a>
+    </div>
+  </main>
+</body>
+</html>
