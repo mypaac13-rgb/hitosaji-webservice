@@ -406,7 +406,7 @@
           <ul>
             <li>送信後、2日以内を目安にご返信します。</li>
             <li>文章がまとまらなくてもご安心ください。やりとりの中で整えていきます。</li>
-            <li>送信できない場合は「内容をコピー」から mypaac13@gmail.com 宛にメールいただけます。</li>
+            <li>送信できない場合は「内容をコピー」から Gmail でそのままお送りいただけます。</li>
           </ul>
         </div>
       </aside>
@@ -500,9 +500,10 @@
       const subject = encodeURIComponent(`${payload.service_name} お申し込み`);
       const body = encodeURIComponent(buildPreviewText(payload));
       const ownerEmail = config.ownerEmail || 'example@example.com';
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(ownerEmail)}&su=${subject}&body=${body}`;
       fallback.innerHTML = [
         '自動送信先がまだ設定されていません。',
-        `いまは <a href="mailto:${escapeHtml(ownerEmail)}?subject=${subject}&body=${body}">${escapeHtml(ownerEmail)}</a> 宛に、コピーした内容を送れば使えます。`
+        `いまは <a href="${gmailUrl}" target="_blank" rel="noopener noreferrer">Gmailで送る</a> から、そのまま送信できます。`
       ].join('\n');
     }
 
