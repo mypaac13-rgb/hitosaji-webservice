@@ -143,9 +143,9 @@
     }
 
     .hero__card {
-      padding: 28px;
-      border: 1px solid var(--line);
-      background: rgba(247, 245, 242, 0.56);
+      padding: 6px 0 6px 28px;
+      border-left: 1px solid var(--line);
+      background: transparent;
     }
 
     .hero__card-title {
@@ -161,9 +161,9 @@
     }
 
     .panel {
-      padding: 30px;
-      border: 1px solid var(--line);
-      background: rgba(247, 245, 242, 0.5);
+      padding: 0;
+      border: 0;
+      background: transparent;
     }
 
     .panel h2 {
@@ -278,14 +278,16 @@
     }
 
     .line-guide {
-      margin-bottom: 22px;
-      padding: 22px 22px 20px;
-      border: 1px solid var(--line);
-      background: rgba(247, 245, 242, 0.62);
+      margin-bottom: 34px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(196, 190, 182, 0.72);
+      background: transparent;
     }
 
     .line-guide h2 {
       margin-bottom: 10px;
+      font-size: 1.02rem;
+      letter-spacing: 0.08em;
     }
 
     .line-guide__actions {
@@ -299,6 +301,17 @@
       margin-top: 12px;
       font-size: 0.8rem;
       color: var(--light);
+    }
+
+    .form-block {
+      padding: 28px 30px 30px;
+      border: 1px solid rgba(196, 190, 182, 0.78);
+      background: rgba(247, 245, 242, 0.34);
+    }
+
+    .panel--side {
+      padding: 28px 0 0 28px;
+      border-left: 1px solid rgba(196, 190, 182, 0.72);
     }
 
     @media (max-width: 860px) {
@@ -319,6 +332,16 @@
 
       .topbar {
         margin-bottom: 36px;
+      }
+
+      .hero__card,
+      .panel--side {
+        padding-left: 0;
+        border-left: 0;
+      }
+
+      .form-block {
+        padding: 24px 20px 24px;
       }
     }
   </style>
@@ -356,82 +379,83 @@
           <p>内容がまだまとまっていない場合は、LINE公式から一言送っていただく形でも大丈夫です。やりとりしながら内容を整理できます。メールで進めたい場合は、このフォームからもお申し込みいただけます。</p>
           <div class="line-guide__actions">
             <a class="btn btn--primary" href="../line/">LINEから相談する</a>
-            <a class="btn" href="https://lin.ee/PRI24cC" target="_blank" rel="noopener noreferrer">LINE公式を開く</a>
           </div>
           <p class="line-guide__sub">LINEでは「制作相談です」と一言だけでも大丈夫です。</p>
         </div>
 
-        <h2>お申し込み内容</h2>
-        <form id="serviceForm" novalidate>
-          <div class="field field--split">
-            <div>
-              <label for="name">お名前</label>
-              <input id="name" name="name" autocomplete="name" required>
+        <div class="form-block">
+          <h2>お申し込み内容</h2>
+          <form id="serviceForm" novalidate>
+            <div class="field field--split">
+              <div>
+                <label for="name">お名前</label>
+                <input id="name" name="name" autocomplete="name" required>
+              </div>
+              <div>
+                <label for="brandName">屋号 / 活動名</label>
+                <input id="brandName" name="brandName" autocomplete="organization">
+              </div>
             </div>
-            <div>
-              <label for="brandName">屋号 / 活動名</label>
-              <input id="brandName" name="brandName" autocomplete="organization">
+
+            <div class="field field--split">
+              <div>
+                <label for="email">メールアドレス</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div>
+                <label for="deadline">希望納期</label>
+                <input id="deadline" name="deadline" placeholder="例: 4月末 / なるべく早め">
+              </div>
             </div>
-          </div>
 
-          <div class="field field--split">
-            <div>
-              <label for="email">メールアドレス</label>
-              <input id="email" name="email" type="email" autocomplete="email" required>
+            <div class="field">
+              <label for="activity">どんな活動をしていますか</label>
+              <textarea id="activity" name="activity" required></textarea>
             </div>
-            <div>
-              <label for="deadline">希望納期</label>
-              <input id="deadline" name="deadline" placeholder="例: 4月末 / なるべく早め">
+
+            <div class="field">
+              <label for="reason">ホームページを作りたい理由</label>
+              <textarea id="reason" name="reason" required></textarea>
             </div>
-          </div>
 
-          <div class="field">
-            <label for="activity">どんな活動をしていますか</label>
-            <textarea id="activity" name="activity" required></textarea>
-          </div>
-
-          <div class="field">
-            <label for="reason">ホームページを作りたい理由</label>
-            <textarea id="reason" name="reason" required></textarea>
-          </div>
-
-          <div class="field">
-            <label for="contents">入れたい内容</label>
-            <textarea id="contents" name="contents" placeholder="例: プロフィール、メニュー、アクセス、問い合わせ先"></textarea>
-          </div>
-
-          <div class="field field--split">
-            <div>
-              <label for="photos">写真の準備状況</label>
-              <select id="photos" name="photos">
-                <option value="用意している">用意している</option>
-                <option value="一部だけある">一部だけある</option>
-                <option value="まだない">まだない</option>
-              </select>
+            <div class="field">
+              <label for="contents">入れたい内容</label>
+              <textarea id="contents" name="contents" placeholder="例: プロフィール、メニュー、アクセス、問い合わせ先"></textarea>
             </div>
-            <div>
-              <label for="reference">参考にしたいサイトや雰囲気</label>
-              <input id="reference" name="reference" placeholder="URLや、言葉だけでも可">
+
+            <div class="field field--split">
+              <div>
+                <label for="photos">写真の準備状況</label>
+                <select id="photos" name="photos">
+                  <option value="用意している">用意している</option>
+                  <option value="一部だけある">一部だけある</option>
+                  <option value="まだない">まだない</option>
+                </select>
+              </div>
+              <div>
+                <label for="reference">参考にしたいサイトや雰囲気</label>
+                <input id="reference" name="reference" placeholder="URLや、言葉だけでも可">
+              </div>
             </div>
-          </div>
 
-          <div class="field">
-            <label for="note">その他伝えたいこと</label>
-            <textarea id="note" name="note"></textarea>
-            <p class="field__hint">Instagram、note、既存のショップURLなどがあればここに書いてください。</p>
-          </div>
+            <div class="field">
+              <label for="note">その他伝えたいこと</label>
+              <textarea id="note" name="note"></textarea>
+              <p class="field__hint">Instagram、note、既存のショップURLなどがあればここに書いてください。</p>
+            </div>
 
-          <div class="actions">
-            <button class="btn btn--primary" type="submit">内容を送信する</button>
-            <button class="btn" type="button" id="copyButton">内容をコピー</button>
-          </div>
-        </form>
+            <div class="actions">
+              <button class="btn btn--primary" type="submit">内容を送信する</button>
+              <button class="btn" type="button" id="copyButton">内容をコピー</button>
+            </div>
+          </form>
+        </div>
 
         <div class="status" id="status"></div>
         <div class="fallback" id="fallback"></div>
       </section>
 
-      <aside class="panel">
+      <aside class="panel panel--side">
         <h2>送信前の確認</h2>
         <div class="preview" id="preview">ここに入力内容の下書きが表示されます。</div>
 
