@@ -403,45 +403,15 @@
                 <input id="email" name="email" type="email" autocomplete="email" required>
               </div>
               <div>
-                <label for="deadline">時期のご希望</label>
-                <input id="deadline" name="deadline" placeholder="例: 4月末 / なるべく早め">
+                <label for="message">ひとことでも大丈夫です</label>
+                <input id="message" name="message" placeholder="例: 相談したいです / こんな感じにしたいです" required>
               </div>
             </div>
 
             <div class="field">
-              <label for="activity">どんなことをされているか</label>
-              <textarea id="activity" name="activity" required></textarea>
-            </div>
-
-            <div class="field">
-              <label for="reason">ホームページを作りたいきっかけ</label>
-              <textarea id="reason" name="reason" required></textarea>
-            </div>
-
-            <div class="field">
-              <label for="contents">載せたい内容</label>
-              <textarea id="contents" name="contents" placeholder="例: プロフィール、メニュー、アクセス、問い合わせ先"></textarea>
-            </div>
-
-            <div class="field field--split">
-              <div>
-                <label for="photos">写真のご用意について</label>
-                <select id="photos" name="photos">
-                  <option value="用意している">用意している</option>
-                  <option value="一部だけある">一部だけある</option>
-                  <option value="まだない">まだない</option>
-                </select>
-              </div>
-              <div>
-                <label for="reference">参考にしたいサイトや雰囲気</label>
-                <input id="reference" name="reference" placeholder="URLや、言葉だけでも可">
-              </div>
-            </div>
-
-            <div class="field">
-              <label for="note">ほかに伝えておきたいこと</label>
-              <textarea id="note" name="note"></textarea>
-              <p class="field__hint">Instagram、note、既存のショップURLなどがあればここに書いてください。</p>
+              <label for="note">自由にお送りください</label>
+              <textarea id="note" name="note" placeholder="どんなことをされているか、作りたい雰囲気、載せたい内容、参考にしたいサイトなど、まとまっていなくても大丈夫です。"></textarea>
+              <p class="field__hint">LINEからでも、メールからでも受け付けています。まずは思いついたことをそのまま送ってください。</p>
             </div>
 
             <div class="actions">
@@ -460,11 +430,11 @@
         <div class="preview" id="preview">ここに、送っていただく内容のメモが表示されます。</div>
 
         <div class="notes">
-          <h2>お申し込みについて</h2>
+          <h2>ご相談について</h2>
           <ul>
             <li>送信後、2日以内を目安にご返信します。</li>
-            <li>文章がまとまらなくてもご安心ください。やりとりの中で整えていきます。</li>
-            <li>まずはLINE公式からのご相談をおすすめしています。必要に応じてメールでも対応できます。</li>
+            <li>内容がまとまっていなくても大丈夫です。やりとりしながら整えていけたらと思います。</li>
+            <li>まずはLINE公式からのご相談をおすすめしていますが、メールでも受け付けています。</li>
             <li>送信できない場合は「内容をコピー」からLINEまたはGmailでそのままお送りいただけます。</li>
           </ul>
         </div>
@@ -505,12 +475,7 @@
         name: data.name || '',
         brand_name: data.brandName || '',
         email: data.email || '',
-        deadline: data.deadline || '',
-        activity: data.activity || '',
-        reason: data.reason || '',
-        contents: data.contents || '',
-        photos: data.photos || '',
-        reference: data.reference || '',
+        message: data.message || '',
         note: data.note || ''
       };
     }
@@ -521,13 +486,8 @@
       if (payload.name) sections.push(`お名前: ${payload.name}`);
       if (payload.brand_name) sections.push(`活動名やお店の名前: ${payload.brand_name}`);
       if (payload.email) sections.push(`メールアドレス: ${payload.email}`);
-      if (payload.deadline) sections.push(`時期のご希望: ${payload.deadline}`);
-      if (payload.activity) sections.push(`どんなことをされているか\n${payload.activity}`);
-      if (payload.reason) sections.push(`ホームページを作りたいきっかけ\n${payload.reason}`);
-      if (payload.contents) sections.push(`載せたい内容\n${payload.contents}`);
-      if (payload.photos) sections.push(`写真のご用意について: ${payload.photos}`);
-      if (payload.reference) sections.push(`参考にしたいサイトや雰囲気: ${payload.reference}`);
-      if (payload.note) sections.push(`ほかに伝えておきたいこと\n${payload.note}`);
+      if (payload.message) sections.push(`ご相談内容\n${payload.message}`);
+      if (payload.note) sections.push(`自由にお送りいただいた内容\n${payload.note}`);
 
       if (!sections.length) {
         return 'ここに、送っていただく内容のメモが表示されます。';
@@ -565,8 +525,7 @@
     function validate(payload) {
       if (!payload.name.trim()) return 'お名前を入力してください。';
       if (!payload.email.trim()) return 'メールアドレスを入力してください。';
-      if (!payload.activity.trim()) return 'どんなことをされているかを入力してください。';
-      if (!payload.reason.trim()) return 'ホームページを作りたいきっかけを入力してください。';
+      if (!payload.message.trim()) return 'ご相談内容を入力してください。';
       return '';
     }
 
