@@ -1,0 +1,53 @@
+<svg width="2500" height="843" viewBox="0 0 2500 843" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="208" y1="64" x2="2298" y2="779" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FBF8F2"/>
+      <stop offset="1" stop-color="#F1E9DE"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="1250" y1="82" x2="1250" y2="761" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FBF8F4" stop-opacity="0.94"/>
+      <stop offset="1" stop-color="#F7F1E8" stop-opacity="0.86"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="2500" height="843" fill="url(#bg)"/>
+  <ellipse cx="341" cy="167" rx="308" ry="114" fill="#EEE3D6" fill-opacity="0.62"/>
+  <ellipse cx="2148" cy="710" rx="368" ry="136" fill="#E9DED0" fill-opacity="0.66"/>
+  <path d="M149 650C324 591 522 583 702 625" stroke="#D8CCBD" stroke-width="3" stroke-linecap="round"/>
+  <path d="M1809 190C1985 244 2178 255 2355 219" stroke="#D9CCBE" stroke-width="3" stroke-linecap="round"/>
+
+  <rect x="54" y="54" width="2392" height="735" rx="28" fill="url(#panel)" stroke="#D2C5B6" stroke-width="2"/>
+  <path d="M833.5 122V720" stroke="#D8CCBD" stroke-width="1.5"/>
+  <path d="M1666.5 122V720" stroke="#D8CCBD" stroke-width="1.5"/>
+
+  <text x="1250" y="143" text-anchor="middle" fill="#8A7E72" font-family="'Times New Roman', serif" font-size="28" font-style="italic" letter-spacing="8">hitosaji official line</text>
+
+  <path d="M350 248H484C503.882 248 520 264.118 520 284V338C520 357.882 503.882 374 484 374H436L395 411V374H350C330.118 374 314 357.882 314 338V284C314 264.118 330.118 248 350 248Z" stroke="#8A7E72" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M382 288H452" stroke="#8A7E72" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M382 313H452" stroke="#8A7E72" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M382 338H431" stroke="#8A7E72" stroke-width="2.5" stroke-linecap="round"/>
+
+  <path d="M1187 254C1218 237 1282 237 1313 254C1340 269 1338 319 1304 336C1274 350 1226 350 1196 336C1162 319 1160 269 1187 254Z" stroke="#8A7E72" stroke-width="2.5"/>
+  <path d="M1250 244V345" stroke="#8A7E72" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M1204 289H1296" stroke="#8A7E72" stroke-width="2.5" stroke-linecap="round"/>
+
+  <path d="M2013 254H2153C2170.12 254 2184 267.879 2184 285V337C2184 354.121 2170.12 368 2153 368H2107L2066 405V368H2013C1995.88 368 1982 354.121 1982 337V285C1982 267.879 1995.88 254 2013 254Z" stroke="#8A7E72" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="2048" cy="311" r="5.5" fill="#8A7E72"/>
+  <circle cx="2083" cy="311" r="5.5" fill="#8A7E72"/>
+  <circle cx="2118" cy="311" r="5.5" fill="#8A7E72"/>
+
+  <text x="417" y="472" text-anchor="middle" fill="#2C2825" font-family="'Hiragino Mincho ProN', 'Yu Mincho', serif" font-size="72" letter-spacing="4">制作について</text>
+  <text x="417" y="530" text-anchor="middle" fill="#8A7E72" font-family="'Times New Roman', serif" font-size="30" font-style="italic" letter-spacing="10">Website guide</text>
+  <path d="M343 570H491" stroke="#B9AA98" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="417" y="624" text-anchor="middle" fill="#6B6560" font-family="'Hiragino Mincho ProN', 'Yu Mincho', serif" font-size="28" letter-spacing="2">制作内容や流れを見る</text>
+
+  <text x="1250" y="472" text-anchor="middle" fill="#2C2825" font-family="'Hiragino Mincho ProN', 'Yu Mincho', serif" font-size="72" letter-spacing="4">料金について</text>
+  <text x="1250" y="530" text-anchor="middle" fill="#8A7E72" font-family="'Times New Roman', serif" font-size="30" font-style="italic" letter-spacing="10">Price guide</text>
+  <path d="M1176 570H1324" stroke="#B9AA98" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="1250" y="624" text-anchor="middle" fill="#6B6560" font-family="'Hiragino Mincho ProN', 'Yu Mincho', serif" font-size="28" letter-spacing="2">費用やプランを見る</text>
+
+  <text x="2083" y="472" text-anchor="middle" fill="#2C2825" font-family="'Hiragino Mincho ProN', 'Yu Mincho', serif" font-size="72" letter-spacing="4">相談する</text>
+  <text x="2083" y="530" text-anchor="middle" fill="#8A7E72" font-family="'Times New Roman', serif" font-size="30" font-style="italic" letter-spacing="10">Contact us</text>
+  <path d="M2009 570H2157" stroke="#B9AA98" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="2083" y="624" text-anchor="middle" fill="#6B6560" font-family="'Hiragino Mincho ProN', 'Yu Mincho', serif" font-size="28" letter-spacing="2">そのままメッセージで相談</text>
+</svg>

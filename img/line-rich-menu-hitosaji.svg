@@ -1,0 +1,27 @@
+<svg width="2500" height="843" viewBox="0 0 2500 843" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="2500" height="843" fill="#F8F5EF"/>
+  <rect x="34" y="34" width="2432" height="775" rx="20" stroke="#C4BEB6" stroke-width="2"/>
+  <path d="M833.5 92V751" stroke="#CFC8BF" stroke-width="2"/>
+  <path d="M1666.5 92V751" stroke="#CFC8BF" stroke-width="2"/>
+  <path d="M125 136C304 110 487 107 666 128" stroke="#E6DDD2" stroke-width="3" stroke-linecap="round"/>
+  <path d="M1834 714C2019 739 2203 735 2388 706" stroke="#E6DDD2" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="417" cy="278" r="72" stroke="#8A7E72" stroke-width="3"/>
+  <rect x="378" y="238" width="78" height="82" rx="10" stroke="#8A7E72" stroke-width="3"/>
+  <path d="M398 258H437" stroke="#8A7E72" stroke-width="3" stroke-linecap="round"/>
+  <path d="M398 281H437" stroke="#8A7E72" stroke-width="3" stroke-linecap="round"/>
+  <path d="M398 304H422" stroke="#8A7E72" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="1250" cy="278" r="72" stroke="#8A7E72" stroke-width="3"/>
+  <circle cx="1250" cy="278" r="33" stroke="#8A7E72" stroke-width="3"/>
+  <path d="M1250 232V324" stroke="#8A7E72" stroke-width="3" stroke-linecap="round"/>
+  <path d="M1204 278H1296" stroke="#8A7E72" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="2083" cy="278" r="72" stroke="#8A7E72" stroke-width="3"/>
+  <path d="M2044 244H2122C2136.36 244 2148 255.64 2148 270V299C2148 313.36 2136.36 325 2122 325H2092L2065 350V325H2044C2029.64 325 2018 313.36 2018 299V270C2018 255.64 2029.64 244 2044 244Z" stroke="#8A7E72" stroke-width="3" stroke-linejoin="round"/>
+  <text x="417" y="432" text-anchor="middle" fill="#2C2825" font-family="'Times New Roman', serif" font-size="72" letter-spacing="6">制作について</text>
+  <text x="417" y="498" text-anchor="middle" fill="#8A7E72" font-family="'Times New Roman', serif" font-size="34" font-style="italic" letter-spacing="8">Website</text>
+  <text x="1250" y="432" text-anchor="middle" fill="#2C2825" font-family="'Times New Roman', serif" font-size="72" letter-spacing="6">料金について</text>
+  <text x="1250" y="498" text-anchor="middle" fill="#8A7E72" font-family="'Times New Roman', serif" font-size="34" font-style="italic" letter-spacing="8">Price</text>
+  <text x="2083" y="432" text-anchor="middle" fill="#2C2825" font-family="'Times New Roman', serif" font-size="72" letter-spacing="6">相談する</text>
+  <text x="2083" y="498" text-anchor="middle" fill="#8A7E72" font-family="'Times New Roman', serif" font-size="34" font-style="italic" letter-spacing="8">Contact</text>
+  <text x="1250" y="635" text-anchor="middle" fill="#6B6560" font-family="'Times New Roman', serif" font-size="28" letter-spacing="7">small websites for quiet brands and personal shops</text>
+  <text x="1250" y="698" text-anchor="middle" fill="#8A7E72" font-family="'Times New Roman', serif" font-size="40" font-style="italic" letter-spacing="10">hitosaji</text>
+</svg>
