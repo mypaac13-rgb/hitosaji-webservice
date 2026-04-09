@@ -303,6 +303,16 @@
       color: var(--light);
     }
 
+    .squiggle {
+      width: 132px;
+      height: 14px;
+      margin: 0 0 22px;
+      opacity: 0.72;
+      background-repeat: repeat-x;
+      background-size: 132px 14px;
+      background-image: url("data:image/svg+xml,%3Csvg width='132' height='14' viewBox='0 0 132 14' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 7C8 2 15 2 22 7C29 12 36 12 43 7C50 2 57 2 64 7C71 12 78 12 85 7C92 2 99 2 106 7C113 12 120 12 127 7' fill='none' stroke='%238a7e72' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+    }
+
     .form-block {
       padding: 28px 30px 30px;
       border: 1px solid rgba(196, 190, 182, 0.78);
@@ -385,6 +395,7 @@
 
         <div class="form-block">
           <h2>メールで送る場合はこちら</h2>
+          <div class="squiggle" aria-hidden="true"></div>
           <form id="serviceForm" novalidate>
             <div class="field field--split">
               <div>
