@@ -422,7 +422,6 @@
         </div>
 
         <div class="status" id="status"></div>
-        <div class="fallback" id="fallback"></div>
       </section>
 
       <aside class="panel panel--side">
@@ -448,7 +447,6 @@
     const form = document.getElementById('serviceForm');
     const preview = document.getElementById('preview');
     const status = document.getElementById('status');
-    const fallback = document.getElementById('fallback');
     const copyButton = document.getElementById('copyButton');
     const fields = Array.from(form.querySelectorAll('input, textarea, select'));
 
@@ -509,19 +507,6 @@
       }
     }
 
-    function renderFallback(payload) {
-      const subject = encodeURIComponent(`${payload.service_name} お申し込み`);
-      const body = encodeURIComponent(buildPreviewText(payload));
-      const ownerEmail = config.ownerEmail || 'example@example.com';
-      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(ownerEmail)}&su=${subject}&body=${body}`;
-      const lineUrl = config.lineUrl || 'https://lin.ee/PRI24cC';
-      fallback.innerHTML = [
-        'このフォームの自動送信先はまだ設定されていません。',
-        `おすすめは <a href="${lineUrl}" target="_blank" rel="noopener noreferrer">LINE公式で送る</a> 方法です。`,
-        `メールをご希望の場合は <a href="${gmailUrl}" target="_blank" rel="noopener noreferrer">Gmailで送る</a> から、そのまま送信できます。`
-      ].join('\n');
-    }
-
     function validate(payload) {
       if (!payload.name.trim()) return 'お名前を入力してください。';
       if (!payload.email.trim()) return 'メールアドレスを入力してください。';
@@ -541,7 +526,6 @@
       const payload = buildPayload();
       const errorMessage = validate(payload);
       refreshPreview();
-      renderFallback(payload);
 
       if (errorMessage) {
         setStatus(errorMessage, true);
@@ -568,14 +552,12 @@
         setStatus(config.successMessage || '送信しました。', false);
         form.reset();
         refreshPreview();
-        renderFallback(buildPayload());
       } catch (error) {
         setStatus('送信に失敗しました。内容をコピーして、LINE公式またはメールでお送りください。', true);
       }
     });
 
     refreshPreview();
-    renderFallback(buildPayload());
   </script>
 </body>
 </html>
