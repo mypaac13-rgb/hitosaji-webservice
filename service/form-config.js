@@ -1,5 +1,5 @@
 window.SERVICE_FORM_CONFIG = {
-  endpoint: '',
+  endpoint: 'https://script.google.com/macros/s/AKfycbygZkwVNoJlwoCMMCND5-f89443kJFIwzQ1DuY4RwUQ-K7zG7wh0Vf1epx1xk60wWq2UQ/exec',
   ownerEmail: 'mypaac13@gmail.com',
   lineUrl: 'https://lin.ee/PRI24cC',
   subjectPrefix: '静かな1ページサイト制作',
