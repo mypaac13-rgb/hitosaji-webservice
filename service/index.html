@@ -556,18 +556,14 @@
       setStatus('送信しています。', false);
 
       try {
-        const response = await fetch(config.endpoint, {
+        await fetch(config.endpoint, {
           method: 'POST',
-          mode: 'cors',
+          mode: 'no-cors',
           headers: {
             'Content-Type': 'application/json'
           },
           body: JSON.stringify(payload)
         });
-
-        if (!response.ok) {
-          throw new Error(`HTTP ${response.status}`);
-        }
 
         setStatus(config.successMessage || '送信しました。', false);
         form.reset();
